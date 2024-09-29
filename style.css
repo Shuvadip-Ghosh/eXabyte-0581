@@ -14,8 +14,12 @@ body {
 a {
     text-decoration: none;
 }
-.colo,.active{
+.colo,.btn-outline-success{
 	color: #5ee3ee!important;
+}
+.btn-outline-success:hover{
+	background-color:#5ee3ee!important;
+	color: rgb(20, 21, 23)!important;
 }
 .nav {
 	width: 100%;
@@ -27,10 +31,6 @@ a {
 h5{
 	font-size:1.1rem;
 }
-hr{
-	opacity: 1!important;
-	margin: 0;
-}
 .title {
 	margin-left: 0.5rem;
 	margin-top: 0.5rem;
@@ -41,7 +41,6 @@ hr{
 	height: 3.5rem;
 	margin-top: 0.5rem;
 }
-
 .container {
 	margin-top: 3rem;
 	width: 70%;
@@ -53,5 +52,17 @@ hr{
 	font-size: 1.4rem;
 }
 .footer{
-	height: 10rem;
+	width: 100%!important;
+	height: 6rem;
+	margin-top: 3rem;
+	position: static;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.fnav{
+	display: flex;gap: 1rem;justify-content: end;
+}
+.footer-left,.footer-right{
+	width: 40%;
 }
