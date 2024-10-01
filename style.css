@@ -209,6 +209,7 @@ h4 {
     }
 
     /* contact page  */
+    
     .contact {
         display: flex;
         flex-direction: column;
