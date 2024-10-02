@@ -29,11 +29,13 @@ h1 {
 h5 {
     font-size: 1.1rem;
 }
-h3,h5 {
+h3,
+h5 {
     width: 100%;
     text-align: center;
 }
-.colo, .colo >* ,
+.colo,
+.colo > *,
 .btn-outline-success {
     color: #5ee3ee !important;
 }
@@ -159,38 +161,74 @@ h3,h5 {
 }
 
 /* events page  */
-.events{
+.events {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: auto;
 }
-.event{
-    width: 18rem;
-    overflow: hidden;
+.event {
+    width: 100%;
+    display: flex;
     border: #5ee3ee 8px solid;
     border-radius: 1.2rem;
-    padding: 1rem;
     margin-top: 4rem;
+    height: 16.66rem;
 }
-.evtop{
+.card-left {
+    width: 25rem;
+    overflow: hidden;
+}
+.card-left > img {
+    height: 100%;
+    border-radius: 1.2rem 0 0 1.2rem;
+}
+.card-right {
+    padding: 1rem;
+    border-left: #5ee3ee 8px solid;
+    width: 75%;
+    padding-left: 1rem;
+}
+.card-right > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: auto;
+}
+.card-right > ul > li {
+    color: #5ee3ee;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 40%;
+    margin-top: 1rem;
+}
+.card-right > ul > li > svg {
+    margin-right: 1rem;
+}
+.evtop {
     display: flex;
     justify-content: space-between;
 }
-.evtop >h3{
-    width: fit-content!important;
+.evbtm{
+    display: none;
+}
+
+.evtop > h3 {
+    width: fit-content !important;
     color: #5ee3ee;
     font-weight: 560;
+    margin: 0;
+    font-size: 2rem;
 }
-.register{
-    margin: auto;
+.register {
+    margin: 0;
     background-color: #5ee3ee;
     color: #0d1117;
     border: none;
-    width: 100%;
+    width: 10rem;
     height: 3rem;
     border-radius: 1.2rem;
-    margin-top: 1rem;
     font-weight: 560;
 }
 
@@ -211,20 +249,10 @@ h3,h5 {
         width: -webkit-fill-available;
         margin-left: 0;
     }
-    h3,h5,
+    h3,
+    h5,
     .ttxt {
         font-size: 1rem;
-    }
-    #Events >h5{
-        margin-top: 1rem;
-        text-align: justify;
-
-    }
-    .evtop >h3{
-        width: fit-content!important;
-        color: #5ee3ee;
-        font-size: 1.5rem;
-        font-weight: 560;
     }
     .video-cont {
         width: 100%;
@@ -255,7 +283,6 @@ h3,h5 {
     }
 
     /* contact page  */
-
     .contact {
         display: flex;
         flex-direction: column;
@@ -266,5 +293,67 @@ h3,h5 {
         height: 25rem;
         padding: 1rem 2rem;
         border-radius: 1.2rem;
+    }
+
+    /* event page  */
+    #Events > h5 {
+        margin-top: 1rem;
+        text-align: justify;
+    }
+    .event {
+        height: 29rem;
+        width: 100%;
+        flex-direction: column;
+    }
+    .card-left {
+        width: 100%;
+        height: 12rem;
+        overflow: hidden;
+    }
+    .card-left > img {
+        height: 100%;
+        border-radius: 1.2rem 0 0 1.2rem;
+        width: 100%;
+    }
+    .card-right {
+        border: none;
+        border-top: #5ee3ee 8px solid;
+        padding: 1rem;
+        width: 100%;
+        padding-left: 1rem;
+    }
+    .card-right > ul {
+        display: none;
+    }
+    .evbtm{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .evtop > a,
+    .evtop > button {
+        display: none;
+    }
+    .evtop > h3 {
+        width: 100% !important;
+        color: #5ee3ee;
+        font-weight: 560;
+        margin: 0;
+        font-size: 2rem;
+    }
+    .evbtm > a {
+        width: 40%;
+    }
+    .evbtm > a > .register {
+        width: 100%;
+    }
+    .register {
+        margin: 0;
+        background-color: #5ee3ee;
+        color: #0d1117;
+        border: none;
+        width: 40%;
+        height: 3rem;
+        border-radius: 1.2rem;
+        font-weight: 560;
     }
 }
