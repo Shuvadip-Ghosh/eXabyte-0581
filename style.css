@@ -2,6 +2,9 @@
 * {
     font-family: "Poppins", sans-serif;
 }
+*::-webkit-scrollbar {
+    display: none;
+}
 body {
     background-color: #0d1117;
     color: #ffff;
@@ -46,6 +49,8 @@ h5 {
 .nav {
     width: 100%;
     display: block;
+    /* position: sticky;
+    top: 0; */
 }
 .left-nav {
     display: flex;
@@ -100,6 +105,88 @@ h5 {
     opacity: 0.6;
     top: 0;
     left: 0;
+}
+
+/* about page */
+#About {
+    width: 80% !important;
+}
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+.rightabt {
+    width: 30% !important;
+    height: 38rem;
+}
+.rightabt,
+.leftabt {
+    width: 50%;
+    border-radius: 1.2rem;
+    margin-bottom: 1rem;
+}
+.abttabbtn {
+    margin-bottom: 1rem;
+    background-color: #0d1117;
+    color: #5ee3ee;
+    border: #5ee3ee 5px solid;
+    height: 3rem;
+    width: 100%;
+    border-radius: 1.2rem;
+    font-weight: 560;
+}
+.activetb {
+    background-color: #5ee3ee;
+    color: #0d1117;
+    border: none;
+}
+.tabs {
+    display: none;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.activet {
+    display: flex;
+}
+.people-card {
+    width: 15rem;
+    height: 18rem;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    margin-top: 1rem;
+    backdrop-filter: blur(10px);
+    border: 5px solid rgba(94, 227, 238, 0.5); /* Light border */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    z-index: -1;
+}
+.people {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 1rem;
+}
+.people > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pcbtm {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.links {
+    display: flex;
+    justify-content: space-evenly;
+}
+.links > a {
+    color: #5ee3ee;
 }
 
 /* contact page  */
@@ -174,7 +261,6 @@ h5 {
     border-radius: 1.2rem;
     margin-top: 4rem;
     height: 16.66rem;
-    
 }
 .card-left {
     width: 25rem;
@@ -211,7 +297,7 @@ h5 {
     display: flex;
     justify-content: space-between;
 }
-.evbtm{
+.evbtm {
     display: none;
 }
 
@@ -232,7 +318,6 @@ h5 {
     border-radius: 1.2rem;
     font-weight: 560;
 }
-
 
 @media (max-width: 576px) {
     .container {
@@ -327,7 +412,7 @@ h5 {
     .card-right > ul {
         display: none;
     }
-    .evbtm{
+    .evbtm {
         display: flex;
         justify-content: space-evenly;
     }
