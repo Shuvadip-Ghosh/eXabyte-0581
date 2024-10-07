@@ -8,6 +8,7 @@ Array.from(tabbtns).forEach((tab) => {
             .classList.remove("activetb");
         document.getElementById(deftar).classList.remove("activet");
         tab.classList.add("activetb");
+        document.getElementById("dpd").innerHTML = tab.innerHTML
         deftar = tab.getAttribute("tabtarget");
         document.getElementById(deftar).classList.add("activet");
     });

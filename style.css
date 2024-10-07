@@ -115,6 +115,9 @@ h5 {
     justify-content: space-evenly;
     margin-top: 1rem;
 }
+.topd {
+    display: none;
+}
 .rightabt {
     width: 30% !important;
     height: 38rem;
@@ -433,5 +436,29 @@ h5 {
         height: 3rem;
         border-radius: 1.2rem;
         font-weight: 560;
+    }
+
+    /* about page  */
+    #About{
+        width: 100%!important;
+    }
+    .topd {
+        display: block;
+        width: 100%;
+    }
+    .rightabt {
+        display: none;
+    }
+    .leftabt {
+        width: 100%;
+    }
+    .dropdown-toggle{
+        width: 100%;
+    }
+    .dropdown-menu{
+        background-color: #0d1117;
+        width: 100%;
+        border-radius: 1.2rem;
+        padding: 1rem;
     }
 }
