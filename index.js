@@ -6,11 +6,14 @@ Array.from(tabbtns).forEach((tab) => {
         document
             .querySelectorAll(`[tabtarget=${deftar}]`)[0]
             .classList.remove("activetb");
+        document
+            .querySelectorAll(`[tabtarget=${deftar}]`)[1]
+            .classList.remove("activetb");
         document.getElementById(deftar).classList.remove("activet");
         tab.classList.add("activetb");
-        document.getElementById("dpd").innerHTML = tab.innerHTML
         deftar = tab.getAttribute("tabtarget");
         document.getElementById(deftar).classList.add("activet");
+        document.getElementById("dpd").innerHTML = tab.innerHTML;
     });
 });
 
